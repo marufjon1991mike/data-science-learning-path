@@ -21,17 +21,21 @@ print(natija)
  
 son_1 = int(input("Birinchi sonni kiriting: "))
 son_2 = int(input("Ikkinchi sonni kiriting: "))
-yigindi = son_1 + son_2
-ayirma = son_1 - son_2
-kopaytma = son_1 * son_2
-bolinma = son_1 / son_2
-print(f"{son_1} va {son_2} ning yig'indisi {yigindi}, ayirmasi {ayirma}, ko'paytmasi {kopaytma} va bo'linmasi {bolinma} ga teng")
+
+if son_2 == 0:
+    print("Har qanday sonni 0 ga bo'lib bo'lmaydi.")
+else:
+    yigindi = son_1 + son_2
+    ayirma = son_1 - son_2
+    kopaytma = son_1 * son_2
+    bolinma = son_1 / son_2
+    print(f"{son_1} va {son_2} ning yig'indisi {yigindi}, ayirmasi {ayirma}, ko'paytmasi {kopaytma} va bo'linmasi {bolinma} ga teng")
 
 # task_3
 #Foydalanuvchidan uning ish haqini kiritishini so'rang va yillik daromadini hisoblab chiqing (oylik × 12)
 
-oylik_maosh = int(input("Oylik ish haqingiz qancha? "))
-yillik = oylik_maosh * 12
+oylik_maosh_som = int(input("Oylik ish haqingiz qancha? "))
+yillik = oylik_maosh_som * 12
 print(f"Sizning yillik maoshingiz {yillik} so'm")
 
 # task_4
