@@ -30,9 +30,16 @@ print(kopaytma(5))
 # task_3
 # Shuni yozib ko'ring: **kwargs yordamida, foydalanuvchi bergan barcha mahsulot va narxlarni qabul 
 # qilib, ularning jami summasini hisoblaydigan funksiya:
-    
-def jami_hisobla(**mahsulotlar):
-    
+   
+# 1-usul
+# def jami_hisobla(**mahsulotlar):
+#     return sum(mahsulotlar.values())
 
+# 2-usul
+def jami_hisobla(**mahsulotlar):
+    natija = 0
+    for mahsulot, narx in mahsulotlar.items():
+        natija += narx
+    return natija
     
 print(jami_hisobla(non=5000, sut=8000, tuxum=15000))
